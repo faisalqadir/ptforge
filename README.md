@@ -1,4 +1,4 @@
-# PanoForge
+# PtForge
 
 **Next in line for the getcraft phenomenon:** a free, open-source panorama stitcher with a
 PTGui-class feature set. Load your overlapping photos (even from a circular fisheye) and it
