@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# build output (PyInstaller app bundles and disk images)
+build/
+dist/
+dist_*/
+*.dmg
+packaging/PanoForge.iconset/
+
+# generated test data and stitch results (recreate with tools/synth.py)
+testdata/
+
+# local tool state
+.impeccable/
+.DS_Store

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panoforge"
+version = "0.1.0"
+description = "PanoForge - panorama stitching engine and editor"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26", "scipy>=1.11", "opencv-contrib-python-headless>=4.9", "pillow>=10", "tifffile", "imagecodecs",
+  "exifread", "PyMaxflow", "fastapi", "uvicorn[standard]", "python-multipart",
+]
+
+[project.optional-dependencies]
+raw = ["rawpy"]
+heic = ["pillow-heif"]
+dev = ["pytest", "psd-tools"]
+desktop = ["pywebview>=5"]
+build = ["pywebview>=5", "pyinstaller>=6"]
+
+[project.scripts]
+panoforge = "panoforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["panoforge*"]
+
+[tool.setuptools.package-data]
+panoforge = ["web/*.html", "web/css/*", "web/js/*"]
