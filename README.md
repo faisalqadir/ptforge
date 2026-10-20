@@ -57,8 +57,9 @@ one picture. That takes several steps, and PanoForge does each of them for you:
 
 Requirements: a Mac with Apple Silicon (M1 or newer) on macOS 13 or later.
 
-1. Get `PanoForge-0.1.0.dmg`. Build it yourself as described below; the disk image is
-   too big for a git repository.
+1. Download `PanoForge-0.1.0.dmg` from the
+   [Releases page](https://github.com/faisalqadir/ptforge/releases/latest), or build it
+   yourself as described below.
 2. Double-click the `.dmg`. A window opens showing **PanoForge** and an **Applications** folder.
 3. Drag **PanoForge** onto **Applications**.
 4. Open PanoForge from Launchpad or the Applications folder.
